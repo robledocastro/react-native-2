@@ -15,6 +15,7 @@ export default function Home(){
         <View style={styles.container}>
             <Text>Tela HOME</Text>
             <Button title="Ir para detalhes" onPress={ navegaDetalhes } />
+            <Button title="Abrir Drawer" onPress={ () => navigation.openDrawer() } />
         </View>
     )
 }
@@ -23,6 +24,7 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor:'#083547'
     }
 });
